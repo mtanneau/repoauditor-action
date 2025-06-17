@@ -26,5 +26,5 @@ runs:
       
     - name: Run RepoAuditor
       run: |
-        uv run repo_auditor --include GitHub --GitHub-url ${{ github.server_url }}/${{ github.repository }} --GitHub-pat ${{inputs.github_pat}}
+        uv run repo_auditor --verbose --include GitHub --GitHub-url ${{ github.server_url }}/${{ github.repository }} --GitHub-pat ${{inputs.github_pat}}
       shell: bash
